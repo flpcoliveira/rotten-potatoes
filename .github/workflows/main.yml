@@ -27,8 +27,8 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            flpcoliveiraa/rotten-potatoes:latest
             flpcoliveiraa/rotten-potatoes:v${{ github.run_number }}
+            flpcoliveiraa/rotten-potatoes:latest
       
   CD:
     needs: [CI]
