@@ -26,7 +26,7 @@ jobs:
           context: ./src
           file: ./src/Dockerfile
           push: true
-          tags:
+          tags: |
             flpcoliveiraa/rotten-potatoes:latest
             flpcoliveiraa/rotten-potatoes:v${{ github.run_number }}
       
