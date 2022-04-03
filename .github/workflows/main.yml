@@ -46,5 +46,5 @@ jobs:
         with:
           images: flpcoliveiraa/rotten-potatoes:${{ github.run_number }}
           manifests: |
-            k8s/deployments.yaml
+            k8s/deployment.yaml
         
