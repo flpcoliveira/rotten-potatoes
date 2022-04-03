@@ -40,18 +40,18 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web
+  name: rotten-potatoes
 spec:
   selector:
     matchLabels:
-      app: web
+      app: rotten-potatoes
   template:
     metadata:
       labels: 
-        app: web
+        app: rotten-potatoes
     spec:
       containers:
-      - name: web
+      - name: rotten-potatoes
         image: flpcoliveiraa/rotten-potatoes:latest
         ports:  
         - containerPort: 5000
@@ -70,10 +70,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: web
+  name: rotten-potatoes
 spec:
   selector:
-    app: web
+    app: rotten-potatoes
   ports:
   - port: 80
     targetPort: 5000
