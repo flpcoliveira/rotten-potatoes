@@ -28,6 +28,6 @@ jobs:
           push: true
           tags:
             flpcoliveiraa/rotten-potatoes:latest
-            flpcoliveiraa/rotten-potatoes:${{ github.run_number }}
+            flpcoliveiraa/rotten-potatoes:v${{ github.run_number }}
       
       
