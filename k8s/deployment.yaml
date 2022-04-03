@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: flpcoliveiraa/rotten-potatoes:v3
+        image: flpcoliveiraa/rotten-potatoes:latest
         ports:  
         - containerPort: 5000
         env:
